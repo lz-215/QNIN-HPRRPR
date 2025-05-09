@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Horror Games - Five Nights at Freddy's & More | QiJin Horror Games</title>
+    <meta name="description" content="Play Five Nights at Freddy's, Slendrina's Mansion, The Baby in Yellow and more free horror games online. No downloads required, instant play in your browser!">
+    <link rel="canonical" href="https://qijindianzi.com/game4.html" />
+    <meta name="keywords" content="Five Nights at Freddy's, Five Nights at Slendrina's Mansion, The Baby in Yellow, Granny Original, free horror games, scary games">
+    
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPHGTFNNQR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EPHGTFNNQR');
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'horror-red': '#ff0000',
+                        'horror-green': '#00ff00',
+                        'horror-black': '#0a0a0a',
+                        'horror-dark': '#121212',
+                        'horror-gray': '#1a1a1a',
+                        'horror-border': '#39FF14'
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'flicker': 'flicker 2s linear infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        flicker: {
+                            '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': { opacity: 0.99, filter: 'drop-shadow(0 0 1px rgba(0, 255, 0, 0.5))' },
+                            '20%, 21.999%, 63%, 63.999%, 65%, 69.999%': { opacity: 0.4, filter: 'drop-shadow(0 0 5px rgba(0, 255, 0, 0.2))' }
+                        }
+                    },
+                    fontFamily: {
+                        'creepy': ['Creepster', 'cursive'],
+                        'horror': ['Nosifer', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap');
+        
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2339FF14' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .game-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(57, 255, 20, 0.1);
+        }
+        
+        .game-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+            border: 1px solid rgba(57, 255, 20, 0.5);
+        }
+        
+        .play-button {
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .play-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.7);
+        }
+        
+        .game-thumbnail {
+            transition: all 0.5s ease;
+            overflow: hidden;
+            filter: brightness(0.7) contrast(1.2) saturate(1.2);
+        }
+        
+        .game-thumbnail:hover {
+            filter: brightness(1) contrast(1.3) saturate(1.3);
+        }
+        
+        .game-thumbnail img {
+            transition: transform 0.5s ease;
+        }
+        
+        .game-thumbnail:hover img {
+            transform: scale(1.05);
+        }
+        
+        .star-rating {
+            color: #39FF14;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #39FF14;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff0000;
+        }
+        
+        /* Glowing text effect */
+        .glow-text {
+            text-shadow: 0 0 5px rgba(57, 255, 20, 0.7), 0 0 10px rgba(57, 255, 20, 0.5);
+        }
+        
+        .glow-text-red {
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+        
+        /* Blood drip effect */
+        .blood-drip {
+            position: relative;
+        }
+        
+        .blood-drip::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 15px;
+            background: linear-gradient(to bottom, #ff0000, transparent);
+            border-radius: 50%;
+            animation: drip 3s infinite;
+        }
+        
+        @keyframes drip {
+            0% { height: 0; opacity: 1; }
+            70% { height: 15px; opacity: 1; }
+            100% { height: 15px; opacity: 0; }
+        }
+        
+        /* Flickering effect */
+        .flicker {
+            animation: flicker 2s linear infinite;
+        }
+        
+        @keyframes flicker {
+            0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+                opacity: 0.99;
+                filter: drop-shadow(0 0 1px rgba(57, 255, 20, 0.5));
+            }
+            20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+                opacity: 0.4;
+                filter: drop-shadow(0 0 5px rgba(57, 255, 20, 0.2));
+            }
+        }
+        
+        /* Noise overlay */
+        .noise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.05;
+            z-index: 9999;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AcGEgUFHfI+YQAAAFpJREFUaN7t0kERACAIBDEomvqxBvVfCwLMnH2Te0IA0KHVjKShIHs5CpKXoyB5OQqSl6MgeTkKkpejIHk5CpKXoyB5OQqSl6MgeTkKkpejIHk5CpKXoyB5OQryAx4NvgUbVIQsAAAAAElFTkSuQmCC');
+        }
+        
+        /* 添加恐怖风格的波动元素 */
+        .horror-element {
+            position: fixed;
+            pointer-events: none;
+            z-index: 5;
+        }
+        
+        /* 左侧血手印 - 更大更深色 */
+        .bloody-handprint {
+            top: 30%;
+            left: 0;
+            width: 150px; /* 增加宽度 */
+            height: 200px; /* 增加高度 */
+            background-image: url('images/bloody-handprint.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.8; /* 增加不透明度 */
+            filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.9)) brightness(0.9) saturate(1.5); /* 更深的阴影和更饱和的颜色 */
+            animation: pulse-fade 4s ease-in-out infinite, float-side 8s ease-in-out infinite;
+        }
+        
+        /* 右侧幽灵面孔 */
+        .ghost-face {
+            top: 40%;
+            right: 0;
+            width: 120px;
+            height: 180px;
+            background-image: url('images/ghost-face.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.4;
+            filter: drop-shadow(0 0 10px rgba(0, 255, 20, 0.5));
+            animation: fade-in-out 6s ease-in-out infinite, float-side-reverse 10s ease-in-out infinite;
+        }
+        
+        /* 左下角爬行的手 */
+        .crawling-hand {
+            bottom: 10%;
+            left: 0;
+            width: 150px;
+            height: 100px;
+            background-image: url('images/crawling-hand.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.6));
+            animation: crawl 15s linear infinite;
+        }
+        
+        /* 右下角眼睛 */
+        .watching-eyes {
+            bottom: 15%;
+            right: 0;
+            width: 80px;
+            height: 40px;
+            background-image: url('images/watching-eyes.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+            filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.8));
+            animation: blink 4s ease-in-out infinite;
+        }
+        
+        /* 血滴动画 - 更大的血滴 */
+        .blood-drips {
+            position: fixed;
+            top: 0;
+            left: 3%;
+            width: 50px; /* 增加宽度区域 */
+            height: 100vh;
+            pointer-events: none;
+            z-index: 5;
+        }
+        
+        .blood-drip {
+            position: absolute;
+            width: 4px; /* 增加血滴宽度 */
+            height: 30px; /* 增加血滴长度 */
+            background: linear-gradient(to bottom, #cc0000, transparent); /* 更深的红色 */
+            border-radius: 0 0 4px 4px; /* 增加圆角 */
+            animation: drip-down var(--drip-duration, 8s) linear infinite;
+            animation-delay: var(--drip-delay, 0s);
+            opacity: 0.9; /* 增加不透明度 */
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); /* 添加发光效果 */
+        }
+        
+        /* 右侧血滴 */
+        .blood-drips-right {
+            left: auto;
+            right: 3%;
+        }
+        
+        /* 修改血滴动画 */
+        @keyframes drip-down {
+            0% { 
+                height: 0;
+                top: calc(var(--drip-start, 10) * 1%);
+                opacity: 0;
+            }
+            5% { 
+                height: 30px; /* 更长的血滴 */
+                opacity: 0.9;
+            }
+            95% {
+                height: 30px; /* 更长的血滴 */
+                top: calc(var(--drip-end, 90) * 1% - 30px);
+                opacity: 0.9;
+            }
+            100% { 
+                height: 0;
+                top: calc(var(--drip-end, 90) * 1%);
+                opacity: 0;
+            }
+        }
+
+        /* 添加血滴滴落效果 */
+        .blood-drip::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px; /* 血滴底部更宽 */
+            height: 8px;
+            background-color: #cc0000; /* 更深的红色 */
+            border-radius: 50%;
+            opacity: 0;
+            animation: drip-splash var(--drip-duration, 8s) linear infinite;
+            animation-delay: calc(var(--drip-delay, 0s) + var(--drip-duration, 8s) * 0.95);
+        }
+
+        @keyframes drip-splash {
+            0% { 
+                opacity: 0.9;
+                transform: translateX(-50%) scale(1);
+            }
+            100% { 
+                opacity: 0;
+                transform: translateX(-50%) scale(2);
+            }
+        }
+        
+        /* 雾气效果 */
+        .fog-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .fog {
+            position: absolute;
+            width: 200%;
+            height: 100vh;
+            background-image: url('images/fog.png');
+            background-size: cover;
+            opacity: 0.05;
+            animation: fog-move 60s linear infinite;
+        }
+        
+        @keyframes fog-move {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+
+<body class="bg-horror-black text-white min-h-screen">
+    <!-- Noise overlay -->
+    <div class="noise"></div>
+    
+    <!-- 添加雾气效果 -->
+    <div class="fog-container">
+        <div class="fog"></div>
+    </div>
+    
+    <!-- 添加恐怖元素 -->
+    <div class="horror-element bloody-handprint"></div>
+    <div class="horror-element ghost-face"></div>
+    <div class="horror-element crawling-hand"></div>
+    <div class="horror-element watching-eyes"></div>
+    
+    <!-- 添加血滴效果 -->
+    <div class="blood-drips">
+        <div class="blood-drip" style="--drip-start: 5; --drip-end: 30; --drip-duration: 4s; --drip-delay: 0s; left: 10px;"></div>
+        <div class="blood-drip" style="--drip-start: 40; --drip-end: 70; --drip-duration: 6s; --drip-delay: 2s; left: 15px;"></div>
+        <div class="blood-drip" style="--drip-start: 20; --drip-end: 60; --drip-duration: 5s; --drip-delay: 1s; left: 5px;"></div>
+    </div>
+    
+    <div class="blood-drips blood-drips-right">
+        <div class="blood-drip" style="--drip-start: 10; --drip-end: 40; --drip-duration: 5s; --drip-delay: 1.5s; right: 8px;"></div>
+        <div class="blood-drip" style="--drip-start: 50; --drip-end: 85; --drip-duration: 7s; --drip-delay: 0.5s; right: 12px;"></div>
+        <div class="blood-drip" style="--drip-start: 15; --drip-end: 45; --drip-duration: 4.5s; --drip-delay: 3s; right: 3px;"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="bg-horror-dark bg-opacity-90 backdrop-blur-sm sticky top-0 z-50 shadow-lg border-b border-horror-border border-opacity-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <span class="text-2xl font-bold font-horror text-horror-red glow-text-red">QiJin Horror</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#featured" class="text-horror-green hover:text-white transition glow-text">Featured Games</a>
+                    <a href="#popular" class="text-horror-green hover:text-white transition glow-text">Popular Games</a>
+                    <a href="#about" class="text-horror-green hover:text-white transition glow-text">About Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-horror-green hover:text-white">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <h1 class="blood-title font-horror">
+                <span class="blood-flow">Terrifying Horror Games</span>
+            </h1>
+            <p class="text-xl max-w-3xl mx-auto mb-8 text-horror-green font-creepy glow-text">
+                Play instantly in your browser. No downloads. No registration. <span class="text-horror-red">Just pure fear.</span>
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <span class="bg-horror-dark border border-horror-border px-4 py-2 rounded-full text-sm font-semibold inline-flex items-center">
+                    <i class="fas fa-check-circle text-horror-green mr-2"></i>100% FREE
+                </span>
+                <span class="bg-horror-dark border border-horror-border px-4 py-2 rounded-full text-sm font-semibold inline-flex items-center">
+                    <i class="fas fa-bolt text-horror-green mr-2"></i>INSTANT PLAY
+                </span>
+                <span class="bg-horror-dark border border-horror-border px-4 py-2 rounded-full text-sm font-semibold inline-flex items-center">
+                    <i class="fas fa-ghost text-horror-green mr-2"></i>TERRIFYING EXPERIENCE
+                </span>
+            </div>
+        </section>
+
+        <!-- Featured Game - Five Nights at Freddy's -->
+        <section id="featured" class="mb-24">
+            <div class="bg-horror-gray rounded-xl shadow-xl overflow-hidden transform transition-all duration-500 hover:shadow-horror-green/30 border border-horror-border border-opacity-30">
+                <div class="p-8">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-6">
+                        <div>
+                            <h2 class="text-3xl md:text-4xl font-bold mb-2 font-horror blood-title">
+                                <span class="blood-flow">Five Nights at Freddy's</span>
+                            </h2>
+                            <p class="text-horror-green text-lg font-creepy glow-text">
+                                Survive five nights as a security guard in a haunted pizzeria with murderous animatronics
+                            </p>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                            <span class="bg-horror-dark border border-horror-border px-4 py-2 rounded-full text-sm font-semibold inline-flex items-center">
+                                <i class="fas fa-star text-horror-green mr-2"></i>4.8
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Game description -->
+                    <div class="mb-8">
+                        <p class="text-horror-green font-creepy glow-text mb-6">
+                            Five Nights at Freddy's is a terrifying point-and-click survival horror game where you work as a night security guard at Freddy Fazbear's Pizza. Your job seems simple: monitor the security cameras from midnight to 6 AM. However, there's a deadly secret - the restaurant's animatronic mascots come to life at night and have a murderous streak. With limited power to control the doors, lights, and security cameras, you must survive five nights while managing your resources carefully to keep the animatronics from reaching your office.
+                        </p>
+                    </div>
+
+                    <!-- Game screenshots -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        <div class="game-thumbnail rounded-lg overflow-hidden">
+                            <img src="images/fivenightsatfreddy's-1.png" alt="Five Nights at Freddy's screenshot" class="w-full h-48 object-cover">
+                            <p class="text-center text-sm text-horror-green mt-2 font-creepy">Security camera view of Freddy</p>
+                        </div>
+                        <div class="game-thumbnail rounded-lg overflow-hidden">
+                            <img src="images/fivenightsatfreddy's-2.png" alt="Five Nights at Freddy's screenshot" class="w-full h-48 object-cover">
+                            <p class="text-center text-sm text-horror-green mt-2 font-creepy">Office view with door controls</p>
+                        </div>
+                        <div class="game-thumbnail rounded-lg overflow-hidden">
+                            <img src="images/fivenightsatfreddy's-3.png" alt="Five Nights at Freddy's screenshot" class="w-full h-48 object-cover">
+                            <p class="text-center text-sm text-horror-green mt-2 font-creepy">Animatronic jumpscare moment</p>
+                        </div>
+                    </div>
+
+                    <!-- Play button -->
+                    <div class="flex justify-center mb-8">
+                        <a href="https://yandex.com/games/zh/app/183657?utm_source=game_header_logo#app-id=183657&catalog-session-uid=catalog-18b79234-6cbe-53bb-9db9-72baacabd247-1746760999465-7566&rtx-reqid=6408544379694913158&pos=%7B%22listType%22%3A%22played%22%2C%22tabCategory%22%3A%22common%22%7D&redir-data=%7B%22block%22%3A%22played%22%2C%22block_index%22%3A0%2C%22card%22%3A%22your_games%22%2C%22col%22%3A0%2C%22first_screen%22%3A1%2C%22page%22%3A%22main%22%2C%22rn%22%3A366325097%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%226408544379694913158%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22played_games%22%2C%22games_request_id%22%3A%221746760999249206-7971928479146984376-balancer-l7leveler-kubr-yp-klg-31-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.com%252Fgames%252Fzh%22%7D" 
+                           target="_blank" rel="noopener" 
+                           class="play-button bg-horror-green text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg inline-flex items-center">
+                            <i class="fas fa-play mr-2"></i>
+                            Play Now - If You Dare!
+                        </a>
+                    </div>
+
+                    <!-- Game iframe preview -->
+                    <div class="relative w-full max-w-4xl mx-auto mb-8 rounded-lg overflow-hidden shadow-2xl">
+                        <a href="https://yandex.com/games/zh/app/183657?utm_source=game_header_logo#app-id=183657&catalog-session-uid=catalog-18b79234-6cbe-53bb-9db9-72baacabd247-1746760999465-7566&rtx-reqid=6408544379694913158&pos=%7B%22listType%22%3A%22played%22%2C%22tabCategory%22%3A%22common%22%7D&redir-data=%7B%22block%22%3A%22played%22%2C%22block_index%22%3A0%2C%22card%22%3A%22your_games%22%2C%22col%22%3A0%2C%22first_screen%22%3A1%2C%22page%22%3A%22main%22%2C%22rn%22%3A366325097%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%226408544379694913158%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22played_games%22%2C%22games_request_id%22%3A%221746760999249206-7971928479146984376-balancer-l7leveler-kubr-yp-klg-31-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.com%252Fgames%252Fzh%22%7D" 
+                           target="_blank" rel="noopener" class="block relative group">
+                            <img src="images/fivenightsatfreddy's-4.png" alt="Five Nights at Freddy's game preview" class="w-full rounded-lg transition-all duration-300 filter brightness-75 group-hover:brightness-100" style="height:400px; object-fit:cover;">
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 rounded-lg">
+                                <div class="play-button bg-horror-green bg-opacity-20 backdrop-blur-sm p-6 rounded-full">
+                                    <i class="fas fa-play text-4xl text-white"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Game tips and tricks -->
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-horror-dark p-6 rounded-lg border border-horror-border border-opacity-30">
+                            <h3 class="text-xl font-semibold mb-3 text-horror-red font-horror glow-text-red">Survival Tips</h3>
+                            <ul class="space-y-2 text-horror-green font-creepy glow-text">
+                                <li class="flex items-center">
+                                    <i class="fas fa-skull text-horror-red mr-2"></i>
+                                    Conserve power - only use lights and doors when necessary
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-skull text-horror-red mr-2"></i>
+                                    Check Pirate Cove frequently to monitor Foxy
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-skull text-horror-red mr-2"></i>
+                                    Listen for audio cues to know when animatronics are near
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-skull text-horror-red mr-2"></i>
+                                    Develop a camera-checking pattern to track all animatronics
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-skull text-horror-red mr-2"></i>
+                                    If you hear footsteps, be ready to close the appropriate door
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-horror-dark p-6 rounded-lg border border-horror-border border-opacity-30">
+                            <h3 class="text-xl font-semibold mb-3 text-horror-red font-horror glow-text-red">Animatronic Behaviors</h3>
+                            <ul class="space-y-2 text-horror-green font-creepy glow-text">
+                                <li class="flex items-center">
+                                    <i class="fas fa-robot text-horror-red mr-2"></i>
+                                    <strong>Freddy:</strong> Moves directly to your office, check right door light
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-robot text-horror-red mr-2"></i>
+                                    <strong>Bonnie:</strong> Approaches from the left, check left door light
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-robot text-horror-red mr-2"></i>
+                                    <strong>Chica:</strong> Approaches from the right, listen for kitchen sounds
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-robot text-horror-red mr-2"></i>
+                                    <strong>Foxy:</strong> Runs from Pirate Cove if not watched regularly
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Gameplay video -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4 text-horror-red font-horror glow-text-red">Gameplay Walkthrough</h3>
+                        <div class="relative w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
+                            <a href="https://www.youtube.com/watch?app=desktop&v=JRNdm65wFho" target="_blank" rel="noopener" class="block relative group">
+                                <img src="images/fivenightsatfreddy's-vedio.png" alt="Five Nights at Freddy's gameplay video" class="w-full rounded-lg transition-all duration-300 filter brightness-75 group-hover:brightness-100" style="height:300px; object-fit:cover;">
+                                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 rounded-lg">
+                                    <div class="play-button bg-red-600 p-4 rounded-full">
+                                        <i class="fab fa-youtube text-3xl text-white"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- User reviews -->
+                    <div class="mt-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-horror-red font-horror glow-text-red">Player Reviews</h3>
+                            <div class="flex items-center">
+                                <div class="flex star-rating mr-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-horror-green font-bold">4.8/5</span>
+                                <span class="ml-4 bg-horror-dark border border-horror-border px-3 py-1 rounded-full text-xs font-semibold">
+                                    96% Positive
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-horror-dark p-4 rounded-lg border border-horror-border border-opacity-20">
+                                <div class="flex items-center mb-2">
+                                    <img src="images/avatar-horror1.jpg" alt="User Avatar" class="w-10 h-10 rounded-full mr-3">
+                                    <div>
+                                        <h4 class="font-semibold text-white">Michael S.</h4>
+                                        <div class="flex star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-horror-green font-creepy">"This game had me on the edge of my seat the entire time! The tension builds perfectly as the nights progress. The jumpscare moments are genuinely terrifying. Best horror game I've played in years!"</p>
+                            </div>
+                            <div class="bg-horror-dark p-4 rounded-lg border border-horror-border border-opacity-20">
+                                <div class="flex items-center mb-2">
+                                    <img src="images/avatar-horror2.jpg" alt="User Avatar" class="w-10 h-10 rounded-full mr-3">
+                                    <div>
+                                        <h4 class="font-semibold text-white">Sarah K.</h4>
+                                        <div class="flex star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-horror-green font-creepy">"The atmosphere is incredibly creepy. I love how the game builds suspense through limited resources and the constant threat of the animatronics. The lore is fascinating too. Couldn't stop playing until I beat all five nights!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Horror Games Section -->
+        <section id="popular" class="mt-32 mb-24">
+            <h2 class="text-3xl md:text-4xl font-bold mb-10 font-horror blood-title text-center">
+                <span class="blood-flow">More Terrifying Games</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Five Nights at Slendrina's Mansion -->
+                <div class="game-card bg-horror-gray rounded-xl shadow-xl overflow-hidden">
+                    <a href="https://yandex.com/games/zh/app/272792?utm_source=game_header_logo#app-id=272792&catalog-session-uid=catalog-18b79234-6cbe-53bb-9db9-72baacabd247-1746760999465-7566&rtx-reqid=6408544379694913158&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22common%22%7D&redir-data=%7B%22block%22%3A%22suggested%22%2C%22block_index%22%3A1%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A4%2C%22first_screen%22%3A1%2C%22page%22%3A%22main%22%2C%22rn%22%3A827997536%2C%22row%22%3A3%2C%22rtx_reqid%22%3A%226408544379694913158%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22request_id%22%3A%221746760999262840-14594236832602949719-qtlaak7iuyczxrng-BAL%22%2C%22games_request_id%22%3A%221746760999249206-7971928479146984376-balancer-l7leveler-kubr-yp-klg-31-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.com%252Fgames%252Fzh%22%7D" 
+                       target="_blank" rel="noopener" class="block">
+                        <div class="game-thumbnail h-56 overflow-hidden">
+                            <img src="images/fivenightsatslendrina'smansion.png" alt="Five Nights at Slendrina's Mansion" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                <div class="play-button bg-horror-green bg-opacity-20 backdrop-blur-sm p-4 rounded-full">
+                                    <i class="fas fa-play text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold font-horror text-horror-red glow-text-red">Five Nights at Slendrina's Mansion</h3>
+                                <div class="flex star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-1 text-white">4.9</span>
+                                </div>
+                            </div>
+                            <p class="text-horror-green font-creepy glow-text mb-4">Survive five terrifying nights in Slendrina's haunted mansion while avoiding her deadly presence.</p>
+                            <p class="text-sm text-gray-400 mb-4">Navigate through dark corridors, solve puzzles, and collect items to escape while the ghostly Slendrina hunts you down. Use your flashlight wisely as your only defense against this supernatural entity.</p>
+                            <a href="https://yandex.com/games/zh/app/272792?utm_source=game_header_logo#app-id=272792&catalog-session-uid=catalog-18b79234-6cbe-53bb-9db9-72baacabd247-1746760999465-7566&rtx-reqid=6408544379694913158&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22common%22%7D&redir-data=%7B%22block%22%3A%22suggested%22%2C%22block_index%22%3A1%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A4%2C%22first_screen%22%3A1%2C%22page%22%3A%22main%22%2C%22rn%22%3A827997536%2C%22row%22%3A3%2C%22rtx_reqid%22%3A%226408544379694913158%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22request_id%22%3A%221746760999262840-14594236832602949719-qtlaak7iuyczxrng-BAL%22%2C%22games_request_id%22%3A%221746760999249206-7971928479146984376-balancer-l7leveler-kubr-yp-klg-31-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.com%252Fgames%252Fzh%22%7D" 
+                               class="play-button bg-horror-green text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-horror-red transition duration-300 inline-flex items-center">
+                                Play Now <i class="fas fa-play ml-2"></i>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- The Baby in Yellow - fnaf -->
+                <div class="game-card bg-horror-gray rounded-xl shadow-xl overflow-hidden">
+                    <a href="https://yandex.com/games/zh/app/415786?utm_source=game_header_logo#app-id=415786&catalog-session-uid=catalog-18b79234-6cbe-53bb-9db9-72baacabd247-1746760999465-7566&rtx-reqid=6408544379694913158&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22common%22%7D&redir-data=%7B%22block%22%3A%22suggested%22%2C%22block_index%22%3A1%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A2%2C%22first_screen%22%3A1%2C%22page%22%3A%22main%22%2C%22rn%22%3A927555631%2C%22row%22%3A1%2C%22rtx_reqid%22%3A%226408544379694913158%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22request_id%22%3A%221746760999262840-14594236832602949719-qtlaak7iuyczxrng-BAL%22%2C%22games_request_id%22%3A%221746760999249206-7971928479146984376-balancer-l7leveler-kubr-yp-klg-31-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.com%252Fgames%252Fzh%22%7D" 
+                       target="_blank" rel="noopener" class="block">
+                        <div class="game-thumbnail h-56 overflow-hidden">
+                            <img src="images/thebabyinyellow - fnaf.png" alt="The Baby in Yellow - fnaf" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                <div class="play-button bg-horror-green bg-opacity-20 backdrop-blur-sm p-4 rounded-full">
+                                    <i class="fas fa-play text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold font-horror text-horror-red glow-text-red">The Baby in Yellow - fnaf</h3>
+                                <div class="flex star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="ml-1 text-white">4.7</span>
+                                </div>
+                            </div>
+                            <p class="text-horror-green font-creepy glow-text mb-4">Babysit a seemingly innocent child who harbors a terrifying supernatural secret.</p>
+                            <p class="text-sm text-gray-400 mb-4">What starts as a simple babysitting job quickly turns into a nightmare as the baby reveals its true demonic nature. Complete household tasks while keeping an eye on the increasingly disturbing infant.</p>
+                            <a href="https://yandex.com/games/zh/app/415786?utm_source=game_header_logo#app-id=415786&catalog-session-uid=catalog-18b79234-6cbe-53bb-9db9-72baacabd247-1746760999465-7566&rtx-reqid=6408544379694913158&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22common%22%7D&redir-data=%7B%22block%22%3A%22suggested%22%2C%22block_index%22%3A1%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A2%2C%22first_screen%22%3A1%2C%22page%22%3A%22main%22%2C%22rn%22%3A927555631%2C%22row%22%3A1%2C%22rtx_reqid%22%3A%226408544379694913158%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22request_id%22%3A%221746760999262840-14594236832602949719-qtlaak7iuyczxrng-BAL%22%2C%22games_request_id%22%3A%221746760999249206-7971928479146984376-balancer-l7leveler-kubr-yp-klg-31-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.com%252Fgames%252Fzh%22%7D" 
+                               class="play-button bg-horror-green text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-horror-red transition duration-300 inline-flex items-center">
+                                Play Now <i class="fas fa-play ml-2"></i>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Granny Original -->
+                <div class="game-card bg-horror-gray rounded-xl shadow-xl overflow-hidden">
+                    <a href="https://yandex.com/games/zh/app/259805?utm_source=game_header_logo#app-id=259805&catalog-session-uid=catalog-18b79234-6cbe-53bb-9db9-72baacabd247-1746760999465-7566&rtx-reqid=6408544379694913158&pos=%7B%22listType%22%3A%22played%22%2C%22tabCategory%22%3A%22common%22%7D&redir-data=%7B%22block%22%3A%22played%22%2C%22block_index%22%3A0%2C%22card%22%3A%22your_games%22%2C%22carousel_size%22%3A%221.00%22%2C%22col%22%3A0%2C%22first_screen%22%3A1%2C%22page%22%3A%22main%22%2C%22rn%22%3A569216766%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%226408544379694913158%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22played_games%22%2C%22request_id%22%3A%221746760999262840-14594236832602949719-qtlaak7iuyczxrng-BAL%22%2C%22games_request_id%22%3A%221746760999249206-7971928479146984376-balancer-l7leveler-kubr-yp-klg-31-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.com%252Fgames%252Fzh%22%7D" 
+                       target="_blank" rel="noopener" class="block">
+                        <div class="game-thumbnail h-56 overflow-hidden">
+                            <img src="images/grannyoriginal.png" alt="Granny Original" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                <div class="play-button bg-horror-green bg-opacity-20 backdrop-blur-sm p-4 rounded-full">
+                                    <i class="fas fa-play text-2xl text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold font-horror text-horror-red glow-text-red">Granny Original</h3>
+                                <div class="flex star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="ml-1 text-white">4.5</span>
+                                </div>
+                            </div>
+                            <p class="text-horror-green font-creepy glow-text mb-4">Escape from a creepy house while avoiding the terrifying Granny who hunts you relentlessly.</p>
+                            <p class="text-sm text-gray-400 mb-4">You have five days to find a way out of Granny's house. Be careful - she hears everything. Drop an object, and she comes running. Hide under beds or in closets to avoid her deadly attacks.</p>
+                            <a href="https://yandex.com/games/zh/app/259805?utm_source=game_header_logo#app-id=259805&catalog-session-uid=catalog-18b79234-6cbe-53bb-9db9-72baacabd247-1746760999465-7566&rtx-reqid=6408544379694913158&pos=%7B%22listType%22%3A%22played%22%2C%22tabCategory%22%3A%22common%22%7D&redir-data=%7B%22block%22%3A%22played%22%2C%22block_index%22%3A0%2C%22card%22%3A%22your_games%22%2C%22carousel_size%22%3A%221.00%22%2C%22col%22%3A0%2C%22first_screen%22%3A1%2C%22page%22%3A%22main%22%2C%22rn%22%3A569216766%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%226408544379694913158%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22played_games%22%2C%22request_id%22%3A%221746760999262840-14594236832602949719-qtlaak7iuyczxrng-BAL%22%2C%22games_request_id%22%3A%221746760999249206-7971928479146984376-balancer-l7leveler-kubr-yp-klg-31-BAL%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.com%252Fgames%252Fzh%22%7D" 
+                               class="play-button bg-horror-green text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-horror-red transition duration-300 inline-flex items-center">
+                                Play Now <i class="fas fa-play ml-2"></i>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 添加页面底部的恐怖元素 -->
+    <div class="relative w-full h-32 overflow-hidden">
+        <div class="absolute bottom-0 left-0 w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="text-horror-black">
+    <!-- 添加底部导航链接区域 -->
+    <footer class="bg-horror-dark text-white pt-12 pb-6 border-t border-horror-border border-opacity-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- 社交媒体链接 -->
+            <div class="flex items-center justify-center mb-8 border-b border-horror-border border-opacity-30 pb-6">
+                <div class="text-sm mr-4 text-horror-green font-creepy">关注我们</div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-horror-green transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-horror-green transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-horror-green transition">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-horror-green transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-horror-green transition">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-horror-green transition">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 链接导航区域 -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-8 text-sm">
+                <!-- 第一列 -->
+                <div>
+                    <h3 class="text-horror-green font-creepy mb-4">热门游戏</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">Five Nights at Freddy's</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">Slendrina's Mansion</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">The Baby in Yellow</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">Granny Original</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">恐怖医院</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 第二列 -->
+                <div>
+                    <h3 class="text-horror-green font-creepy mb-4">游戏商店</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">新游上线</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">热门排行</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">独立恐怖</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">生存恐怖</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">心理恐怖</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 第三列 -->
+                <div>
+                    <h3 class="text-horror-green font-creepy mb-4">资源</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">游戏攻略</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">恐怖故事</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">游戏资讯</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">开发者社区</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">恐怖游戏历史</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 第四列 -->
+                <div>
+                    <h3 class="text-horror-green font-creepy mb-4">开发人员与IT</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">开发者中心</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">API文档</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">游戏引擎</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">恐怖音效库</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">合作伙伴计划</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 第五列 -->
+                <div>
+                    <h3 class="text-horror-green font-creepy mb-4">公司</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">关于我们</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">加入QiJin</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">联系我们</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">隐私政策</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-horror-green transition">服务条款</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 版权信息 -->
+            <div class="text-center text-sm text-gray-500 border-t border-horror-border border-opacity-30 pt-6">
+                <p><a href="https://beian.miit.gov.cn" rel="nofollow" class="hover:text-horror-green">渝ICP备2024032264号</a></p>
+                <p class="mt-2">© 2024 QiJin Horror Games. 保留所有权利。</p>
+                <p class="mt-1">联系我们: ytsgabcde2323@2925.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+                <path fill="#0a0a0a" fill-opacity="1" d="M0,224L40,213.3C80,203,160,181,240,181.3C320,181,400,203,480,224C560,245,640,267,720,261.3C800,256,880,224,960,218.7C1040,213,1120,235,1200,245.3C1280,256,1360,256,1400,256L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+            </svg>
+        </div>
+        <div class="absolute bottom-0 w-full flex justify-between px-8 pb-4">
+            <div class="horror-element" style="width:80px; height:100px; background-image:url('images/zombie-hand.png'); background-size:contain; background-repeat:no-repeat; animation: hand-rise 8s ease-in-out infinite;">
+            </div>
+            <div class="horror-element" style="width:100px; height:80px; background-image:url('images/skull.png'); background-size:contain; background-repeat:no-repeat; animation: float 6s ease-in-out infinite;">
+            </div>
+        </div>
+    </div>
+
+    <!-- 添加页面加载时的恐怖效果 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 随机闪烁效果
+            setInterval(function() {
+                if (Math.random() > 0.97) {
+                    document.body.classList.add('flicker-effect');
+                    setTimeout(function() {
+                        document.body.classList.remove('flicker-effect');
+                    }, 100);
+                }
+            }, 2000);
+            
+            // 添加动态血滴
+            function createRandomBloodDrip() {
+                const bloodDrips = document.querySelector('.blood-drips');
+                const drip = document.createElement('div');
+                drip.classList.add('blood-drip');
+                
+                const startPos = Math.random() * 30;
+                const endPos = startPos + 20 + Math.random() * 40;
+                const duration = 3 + Math.random() * 5;
+                const delay = Math.random() * 3;
+                const leftPos = Math.random() * 20;
+                
+                drip.style.setProperty('--drip-start', startPos);
+                drip.style.setProperty('--drip-end', endPos);
+                drip.style.setProperty('--drip-duration', `${duration}s`);
+                drip.style.setProperty('--drip-delay', `${delay}s`);
+                drip.style.left = `${leftPos}px`;
+                
+                bloodDrips.appendChild(drip);
+                
+                // 移除旧的血滴以避免DOM过载
+                setTimeout(() => {
+                    drip.remove();
+                }, (duration + delay) * 1000);
+            }
+            
+            // 定期创建新的血滴
+            setInterval(createRandomBloodDrip, 3000);
+        });
+    </script>
+
+    <style>
+        /* 页面闪烁效果 */
+        .flicker-effect {
+            animation: page-flicker 0.1s forwards;
+        }
+        
+        @keyframes page-flicker {
+            0% { filter: brightness(1); }
+            100% { filter: brightness(0.8); }
+        }
+        
+        /* 标题流血效果 - 更大更明显 */
+        .blood-title {
+            position: relative;
+            display: inline-block;
+            font-size: 3.5rem; /* 更大的字体 */
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        /* 血滴从文字流下的效果 */
+        .blood-title::after {
+            content: "";
+            position: absolute;
+            bottom: -20px; /* 更长的滴落距离 */
+            left: 0;
+            width: 100%;
+            height: 20px; /* 更多的血 */
+            background: linear-gradient(180deg, 
+                rgba(255,0,0,0.8) 0%, 
+                rgba(255,0,0,0.6) 20%, 
+                rgba(255,0,0,0.4) 40%, 
+                rgba(255,0,0,0.2) 60%, 
+                rgba(255,0,0,0) 100%);
+            clip-path: polygon(
+                0% 0%, 5% 20%, 10% 0%, 15% 30%, 20% 0%, 25% 20%, 30% 0%, 
+                35% 30%, 40% 0%, 45% 20%, 50% 0%, 55% 30%, 60% 0%, 
+                65% 20%, 70% 0%, 75% 30%, 80% 0%, 85% 20%, 90% 0%, 
+                95% 30%, 100% 0%, 100% 100%, 0% 100%
+            );
+            animation: drip-pulse 4s ease-in-out infinite;
+        }
+
+        /* 文字内部的血液流动效果 */
+        .blood-flow {
+            background: linear-gradient(180deg, 
+                #ff0000 0%, 
+                #cc0000 50%, 
+                #990000 100%);
+            background-size: 100% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            animation: blood-flow 4s ease-in-out infinite;
+        }
+
+        @keyframes blood-flow {
+            0%, 100% { background-position: 0 0; }
+            50% { background-position: 0 100%; }
+        }
+
+        @keyframes drip-pulse {
+            0%, 100% { opacity: 0.9; height: 20px; }
+            50% { opacity: 0.7; height: 25px; }
+        }
+
+        /* 增强血滴效果 */
+        .blood-drip {
+            position: relative;
+        }
+
+        .blood-drip::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 15px;
+            background: linear-gradient(to bottom, #ff0000, transparent);
+            border-radius: 50%;
+            animation: drip 3s infinite;
+        }
+
+        @keyframes drip {
+            0% { height: 0; opacity: 1; }
+            70% { height: 15px; opacity: 1; }
+            100% { height: 15px; opacity: 0; }
+        }
+    </style>
+</body>
+</html>
+
+
+
+
+
